@@ -76,9 +76,16 @@ Estado:<select name="estado">
 </select><br>
 email: <input name="email" maxlength="60">
 <br>
+
 <button type="submit">Salvar cliente </button>
 
-
+<script>
+<?php
+$msg = $_GET["mensagem"]??"";
+if($_GET["mensagem"] == "salvo"){
+  echo "alert('cliente salvo com sucesso!')";
+}
+?>
     </form>
 </body>
 </html>
